@@ -18,7 +18,9 @@ public class SwitchToNovelMode : Command
         advCamera.enabled = false;
         var naniCamera = Engine.GetService<ICameraManager>().Camera;
         naniCamera.enabled = true;
-         
+        var naniCameraUI = Engine.GetService<ICameraManager>().UICamera;
+        naniCameraUI.enabled = true;
+
         // 2. Load and play specified script (is required).
         if (Assigned(ScriptName))
         {

@@ -34,9 +34,10 @@ public class SwitchToAdventureMode : Command
         advCamera.enabled = true;
         var naniCamera = Engine.GetService<ICameraManager>().Camera;
         naniCamera.enabled = false;
+        var naniCameraUI = Engine.GetService<ICameraManager>().UICamera;
+        naniCameraUI.enabled = false;
+        StateManager.Instance.GetComponent<StateManager>().fadeToTransparent(1f);
         StateManager.Instance.bg.enabled = true;
-
-        StateManager.Instance.GetComponent<StateManager>().fadeToTransparent(0.2f);
         StateManager.Instance.state = State.AdvMove;
     }
 }

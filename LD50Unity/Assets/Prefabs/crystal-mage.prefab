@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PP: 1'
+  m_text: 'PP: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 78c368f6c4023934fa5174b82488ca69, type: 2}
   m_sharedMaterial: {fileID: 2677267462328646081, guid: 78c368f6c4023934fa5174b82488ca69, type: 2}
@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 3986553804452184628}
   - component: {fileID: 3986553804452184635}
   - component: {fileID: 3986553804452184629}
+  - component: {fileID: 9067660705183975793}
   m_Layer: 0
   m_Name: crystal-mage
   m_TagString: Untagged
@@ -448,6 +449,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9067660705183975793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986553804452184634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dbfa5bd0d187e74baa09f9f5380d558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPField: {fileID: 6269295686578304682}
+  PPField: {fileID: 5800687020322660556}
+  selector: {fileID: 5818919232646859634}
+  partyMemberName: Crystal Mage
+  maxHP: 100
+  lvl: 100
+  actions:
+  - actionName: Crystal Meteor
+    baseDamage: 25
+    PPCost: 1
+    isWorking: 1
+  - actionName: Mineral Conjuration
+    baseDamage: 200
+    PPCost: 3
+    isWorking: 1
+  - actionName: Guard
+    baseDamage: -100
+    PPCost: 2
+    isWorking: 1
+  - actionName: Skip
+    baseDamage: 0
+    PPCost: 0
+    isWorking: 1
 --- !u!1 &5702254584625332808
 GameObject:
   m_ObjectHideFlags: 0

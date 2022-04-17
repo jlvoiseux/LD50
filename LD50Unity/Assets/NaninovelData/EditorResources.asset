@@ -163,12 +163,48 @@ MonoBehaviour:
       guid: dd85ce99288c2f8488447fa511b1c0d6
   - Id: Scripts
     Resources:
-    - name: final-battle-start
+    - name: final-battle-start-dialogue
       pathPrefix: Scripts
-      guid: e6aa7081fe6a55d4ba38599ccea02929
-    - name: novel-test
+      guid: 04e35b54d3a03444da792f774de87bb5
+    - name: final-battle-start-novel
       pathPrefix: Scripts
-      guid: c25f868f90eb3a0439219bd3875c6a53
+      guid: fe2c0a65dddf6554da243eb67001f092
+    - name: tavern-start-dialogue
+      pathPrefix: Scripts
+      guid: c06e081c35bedcc44a6a18945092eb7d
+    - name: tavern-start-novel
+      pathPrefix: Scripts
+      guid: 1fcca26a01172114e810e3cba17389f7
+    - name: sanctuary-dialogue
+      pathPrefix: Scripts
+      guid: e3afeb802e5c2624a954172ef9e81bb8
+    - name: sanctuary-novel
+      pathPrefix: Scripts
+      guid: 329a2aec0e89f204eaccc26f77c58f25
+    - name: castle-dialogue
+      pathPrefix: Scripts
+      guid: ef8e22704aabeac469945615f48405dd
+    - name: castle-novel
+      pathPrefix: Scripts
+      guid: 5b8eeb00307e5cb44b23a3f645dc4f02
+    - name: tavern-end-dialogue
+      pathPrefix: Scripts
+      guid: 0ddf5c6715faba743ac14de90f5cd5f6
+    - name: tavern-end-novel
+      pathPrefix: Scripts
+      guid: 1018fc1af1c4e1a49814df9db593eff4
+    - name: home-dialogue
+      pathPrefix: Scripts
+      guid: b75a438c14d29bb45b0298dddfa381a8
+    - name: home-novel
+      pathPrefix: Scripts
+      guid: 6932fb556b969a94c85d46a77c6f58b1
+    - name: final-battle-end-dialogue
+      pathPrefix: Scripts
+      guid: bdf8bf91997077b45976a22061a931b0
+    - name: final-battle-end-novel
+      pathPrefix: Scripts
+      guid: be5c6e77957f4b2469a0f1811e3cd120
   - Id: TextPrinters/cb781fca-5f65-4282-8b34-bc30de11daac
     Resources:
     - name: Adventure

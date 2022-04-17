@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Naninovel;
 
 public class InterestPointBehavior : MonoBehaviour
@@ -9,6 +10,8 @@ public class InterestPointBehavior : MonoBehaviour
     public InteractionType type;
     public string scriptName;
     public string label;
+    public int nextScene;
+    public bool triggered = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,21 +22,25 @@ public class InterestPointBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(StateManager.Instance.state == State.AdvMove)
+        if(StateManager.Instance.state == State.AdvMove && !triggered)
         {
             if (Input.GetKeyDown("space") && ip.activeSelf)
             {
+                triggered = true;
                 if (type == InteractionType.Dialogue)
                 {
-                    StateManager.Instance.state = State.AdvDialogue;
-
-                    var inputManager = Engine.GetService<IInputManager>();
-                    inputManager.ProcessInput = true;
-
-                    var scriptPlayer = Engine.GetService<IScriptPlayer>();
-                    scriptPlayer.PreloadAndPlayAsync(scriptName, label: label).Forget();
+                    StateManager.Instance.startDialogue(scriptName, label);
+                }
+                else if(type == InteractionType.NextScene)
+                {
+                    SceneManager.LoadSceneAsync(nextScene);
                 }
             }
+        }
+
+        if (triggered)
+        {
+            ip.SetActive(false);
         }
         
     }
@@ -51,5 +58,6 @@ public class InterestPointBehavior : MonoBehaviour
 
 public enum InteractionType
 {
-    Dialogue
+    Dialogue,
+    NextScene
 }

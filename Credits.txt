@@ -1,8 +1,9 @@
 Credits.txt
 
 
-- Modified version of Bach - Prelude and Fugue in C Minor, BWV in C minor, by ClassicMan (Midi file downloaded on Musescore)
+- Modified version of Bach - Prelude and Fugue in C Minor, BWV847 in C minor, by ClassicMan (Midi file downloaded on Musescore)
 - Modified version of Chopin - Nocturne Opus 9 No. 2 in E-Flat Major, by ClassicMan (Midi file downloaded on Musescore)
 - Modified version of Rameau - Hippolyte et Aricie (Ritournelle), by Sileno_Italie (Midi file downloaded on Musescore)
 - Modified version of Schubert - Piano Sonata No. 21 in B♭ major, by PhilTA (Midi file downloaded on Musescore)
-- Modified version of Mozart - Piano Concerto No.23 in A, 2nd mov. adagio, by akof (Midi file downloaded on Musescore) 
+- Modified version of Mozart - Piano Concerto No.23 in A, 2nd mov. adagio, by akof (Midi file downloaded on Musescore)
+ Vitali - Chaconne in G minor

@@ -485,10 +485,10 @@ MonoBehaviour:
         y: 0
         width: 1
         height: 1
-      AutoReset: 1
+      AutoReset: 0
       AutoDefault: 1
       AutoWait: 1
-      AutoLineBreak: 0
+      AutoLineBreak: 2
       AddToBacklog: 1
       SplitBacklogMessages: 0
       StopVoice: 0

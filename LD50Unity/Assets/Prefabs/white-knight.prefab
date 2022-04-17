@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 3986553804452184629}
   - component: {fileID: 3986553804452184630}
   - component: {fileID: 2435764124957192304}
+  - component: {fileID: 1981278625172630926}
   m_Layer: 0
   m_Name: white-knight
   m_TagString: Untagged
@@ -245,6 +246,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &1981278625172630926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986553804452184634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dbfa5bd0d187e74baa09f9f5380d558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPField: {fileID: 3907805773827184459}
+  PPField: {fileID: 554203292330155301}
+  selector: {fileID: 7943692663753168409}
+  partyMemberName: White Knight
+  maxHP: 100
+  lvl: 100
+  actions:
+  - actionName: Seismic Slash
+    baseDamage: 25
+    PPCost: 1
+    isWorking: 1
+  - actionName: Immaculate Blade
+    baseDamage: 200
+    PPCost: 3
+    isWorking: 1
+  - actionName: Guard
+    baseDamage: -100
+    PPCost: 2
+    isWorking: 1
+  - actionName: Skip
+    baseDamage: 0
+    PPCost: 0
+    isWorking: 1
 --- !u!1 &5599657233077435807
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PP: 1'
+  m_text: 'PP: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 78c368f6c4023934fa5174b82488ca69, type: 2}
   m_sharedMaterial: {fileID: 2677267462328646081, guid: 78c368f6c4023934fa5174b82488ca69, type: 2}
