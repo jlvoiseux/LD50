@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 3986553804452184628}
   - component: {fileID: 3986553804452184635}
   - component: {fileID: 3986553804452184629}
+  - component: {fileID: 49136629288880948}
   m_Layer: 0
   m_Name: huntress
   m_TagString: Untagged
@@ -413,6 +414,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &49136629288880948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986553804452184634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dbfa5bd0d187e74baa09f9f5380d558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPField: {fileID: 8268105637878218285}
+  PPField: {fileID: 7227740391241134527}
+  selector: {fileID: 2425187345815695248}
+  partyMemberName: Huntress
+  maxHP: 100
+  lvl: 100
+  actions:
+  - actionName: Fatal Shot
+    baseDamage: 25
+    PPCost: 1
+    isWorking: 1
+  - actionName: Bullseye Frenzy
+    baseDamage: 200
+    PPCost: 3
+    isWorking: 1
+  - actionName: Guard
+    baseDamage: -100
+    PPCost: 2
+    isWorking: 1
+  - actionName: Skip
+    baseDamage: 0
+    PPCost: 0
+    isWorking: 1
 --- !u!1 &5595423257314502831
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PP: 1'
+  m_text: 'PP: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 78c368f6c4023934fa5174b82488ca69, type: 2}
   m_sharedMaterial: {fileID: 2677267462328646081, guid: 78c368f6c4023934fa5174b82488ca69, type: 2}

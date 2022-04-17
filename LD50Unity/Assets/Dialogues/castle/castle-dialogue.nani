@@ -1,0 +1,25 @@
+# Pre
+RIGHTFUL-KING: What on Earth does this comedy mean? Who let you enter the Castle?
+REVOLUTIONARY-LEADER: The people demand rights, my Liege! Or should I call you... Comrade King ?
+RIGHTFUL-KING: Slience! This is outrageous, this is unfair, this is lese-majesté! I am the sole ruler of the kingdom, by the will of God and the prestige of my lineage!
+WHITE-KNIGHT: KING! What is happening here?
+RIGHTFUL-KING: Oh WHITE KNIGHT, perfect timing. This scoundrel claims that the people, MY people, want to overrule me by electing a new sovereign. Can you believe it? And after all the trouble we went through to red rid of Darkness.
+REVOLUTIONARY-LEADER: This cannot continue, Comrade. Your administation is corrupted. People are dying on the streets, and illiterate children are robbing the few lucky ones that still breathe. Your time is over.
+RIGHTFUL-KING: Hogwash, nonsense! I AM the people. WHITE KNIGHT, lend me a hand. You are nobility, aren't you ?
+@adventure reset:false
+
+# Postking
+RIGHTFUL-KING: And so, order is restored. Thank you for your help, my friend, the bloodline owes you a dear lot.
+WHITE-KNIGHT: Aren't you being a little hard on him? He was backed by a fair number of people, from what I understand...
+RIGHTFUL-KING: Well, now he stands as an example. As for the people, I am not worried in the least. History shows that these aspirations are nothing more than a temporary fad.
+WHITE-KNIGHT: If you say so...
+@adventure reset:false
+
+# Postcrim
+REVOLUTIONARY-LEADER: ...
+REVOLUTIONARY-LEADER: .. ... It hurts...
+REVOLUTIONARY-LEADER: Lizbeth, I...
+REVOLUTIONARY-LEADER: ... ...
+WHITE-KNIGHT: ...
+
+@adventure reset:false

@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/0_menu.unity
+    guid: 7c9cf5b16cd0903488d4ddc5924df7eb
+  - enabled: 1
+    path: Assets/Scenes/1_final-battle-start.unity
+    guid: 8934df7726fed144a9fb55103f97ae6c
+  - enabled: 1
+    path: Assets/Scenes/2_tavern-start.unity
+    guid: 9361fd37f805a364b82207e1254a6db6
+  - enabled: 1
+    path: Assets/Scenes/3_crystal-temple.unity
+    guid: ea65322c96133b24580528ed787559e0
+  - enabled: 1
+    path: Assets/Scenes/4_king-castle.unity
+    guid: f1f648d06867b9e49ad6ae0f38e3e230
+  - enabled: 1
+    path: Assets/Scenes/5_tavern-end.unity
+    guid: b47302c0556cf3e419b256435c5267f5
+  - enabled: 1
+    path: Assets/Scenes/6_home.unity
+    guid: 2b1cc7f82979ea84eaf802b35dbd2a1f
+  - enabled: 1
+    path: Assets/Scenes/7_final-battle-end.unity
+    guid: 742f24f80fc3441439c3b186c7dda43f
   m_configObjects: {}

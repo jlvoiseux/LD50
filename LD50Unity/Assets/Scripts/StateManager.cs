@@ -9,15 +9,20 @@ public class StateManager : MonoBehaviour
     public SpriteRenderer bg;
     public State state;
 
+    public GameObject adv;
+    public GameObject fight;
+
     public bool fadeToBlackFlag = false;
     public bool fadeToTransparentFlag = false;
+    public bool naniInit = false;
+
     float fadeTarget;
     float fadeCounter;
 
     private static StateManager _instance;
     public static StateManager Instance { get { return _instance; } }
 
-    private void Awake()
+    async void Awake()
     {
         if (_instance != null && _instance != this)
         {
@@ -27,13 +32,8 @@ public class StateManager : MonoBehaviour
         {
             _instance = this;
         }
-    }
-
-    async void Start()
-    {
         await RuntimeInitializer.InitializeAsync();
-        var switchCommand = new SwitchToAdventureMode { ResetState = false };
-        await switchCommand.ExecuteAsync();
+        Instance.naniInit = true;
     }
 
     void Update()
@@ -56,6 +56,46 @@ public class StateManager : MonoBehaviour
                 fadeToTransparentFlag = false;
             }
         }
+    }
+
+    public void startDialogue(string scriptName, string label)
+    {
+        Instance.state = State.AdvDialogue;
+
+        var inputManager = Engine.GetService<IInputManager>();
+        inputManager.ProcessInput = true;
+
+        var scriptPlayer = Engine.GetService<IScriptPlayer>();
+        scriptPlayer.PreloadAndPlayAsync(scriptName, label: label).Forget();
+    }
+
+    public void startMove()
+    {
+        Instance.state = State.AdvMove;
+        fadeToTransparent(1f);
+        Instance.adv.SetActive(true);
+    }
+
+    public void startFight()
+    {
+        fadeToTransparent(1f);
+        Instance.state = State.Fight;
+        Instance.adv.SetActive(false);
+        Instance.fight.SetActive(true);
+    }
+
+    public void endFight()
+    {
+        fadeToTransparent(1f);
+        Instance.state = State.AdvMove;
+        Instance.fight.SetActive(false);
+        Instance.adv.SetActive(true);
+    }
+
+    public void restartFight()
+    {
+        fadeToTransparent(1f);
+        Instance.fight.GetComponent<FightManager>().Reset();
     }
 
     public void fadeToBlack(float time)

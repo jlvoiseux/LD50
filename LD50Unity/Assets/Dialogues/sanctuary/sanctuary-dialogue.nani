@@ -1,0 +1,15 @@
+# Pre
+CRYSTAL-MAGE: W... W... WHITE KNIGHT ?
+WHITE-KNIGHT: What... what in hell happened here ? Is the Great Crystal... corrupted ?
+CRYSTAL-MAGE: I... I-I-I...
+WHITE-KNIGHT: Watch out, there is something lurking behind you!
+@adventure reset:false
+
+# Post
+CRYSTAL-MAGE: The Crystal... is broken.
+CRYSTAL-MAGE: There is no power emanating from it anymore.
+CRYSTAL-MAGE: It is nothing.
+CRYSTAL-MAGE: I am nothing.
+WHITE-KNIGHT: ...
+
+@adventure reset:false
